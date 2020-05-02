@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang=ja-JP>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <link type="text/css" href="./mystyle.css" rel="stylesheet">
+    <title>2.7 ファイルのバイト読み込み</title>
+  </head>
+  
+  <body>
+    <div class="navigation">
+      <a href="./F2_6.htm" accesskey="p">&lt;&lt;previous</a> |  
+      <a href="./index.htm">index</a> | 
+      <a href="./F2_1.htm">1</a> | 
+      <a href="./F2_2.htm">2</a> | 
+      <a href="./F2_3.htm">3</a> | 
+      <a href="./F2_4.htm">4</a> | 
+      <a href="./F2_5.htm">5</a> | 
+      <a href="./F2_6.htm">6</a> | 
+      <strong>7</strong> | 
+      <a href="./F2_8.htm">8</a> | 
+      <a href="./F2_9.htm">9</a> | 
+      <a href="./F2_10.htm">10</a> | 
+      <a href="./F2_8.htm" accesskey="n">next&gt;&gt;</a>
+    </div>
+  
+    <h1 class="title">2.7 ファイルのバイト読み込み</h1>
+    
+    <div id="content">
+      <h2>プログラム</h2>
+      <img src="./F2_7src.png" alt="F2_7">
+    </div>
+    
+    <div id="explain">
+      <h2>プログラムの説明</h2>
+      <table class="explain" summary="explain">
+        <tr>
+          <th>ファイルのバイト読み込み</th>
+          <td>
+            <p>ファイルの内容はバイト・データの並びです。ただし、そのデータを制限して、区別することで色々なものを表現します。</p>
+            <p>クラスF2_7を見てください。</p>
+            <p>ローカル変数dataを宣言し、初期値として長さ0の配列を代入しています。dataは基本データ型であるbyte型の配列となります。</p>
+            <p>例外処理の構文であるtry節で変数dataへの代入を行うため初期値が必要となります。</p>
+            <p>java.nio.file.FilesクラスのクラスメソッドであるreadAllBytesを使用してファイルの読み込みを行います。実引数としてPathインスタンスを渡します。</p>
+            <p>ファイルの読み込みが出来た場合、byte配列となり、読み込むことが出来ます。</p>
+            <p>for制御文ではそのbyte配列を16進数２桁にして出力しています。</p>
+          </td>
+        </tr>
+        <tr>
+          <th>バイト（byte）</th>
+          <td>
+            <p>一般的には、１ビットという単位が8つ並んだものです。</p>
+          </td>
+        </tr>
+        <tr>
+          <th>ビット（bit）</th>
+          <td>
+            <p>2進数の1桁で0か1です。</p>
+          </td>
+        </tr>
+        <tr>
+          <th>注意</th>
+          <td>
+            <p>大きなファイルを読込むには工夫が必要になります。</p>
+            <p>Javaのファイル操作クラスは、Java 7で新しいものが導入されました（通称NIO2）。このテキストはNIO2を使用しています。</p>
+          </td>
+        </tr>
+      </table>
+      
+      
+    </div>
+  </body>
+</html>

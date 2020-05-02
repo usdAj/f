@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang=ja-JP>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <link type="text/css" href="./mystyle.css" rel="stylesheet">
+    <title>2.10 ファイル内のすべての行をListとして読み込み</title>
+  </head>
+  
+  <body>
+    <div class="navigation">
+      <a href="./F2_9.htm" accesskey="p">&lt;&lt;previous</a> |  
+      <a href="./index.htm">index</a> | 
+      <a href="./F2_1.htm">1</a> | 
+      <a href="./F2_2.htm">2</a> | 
+      <a href="./F2_3.htm">3</a> | 
+      <a href="./F2_4.htm">4</a> | 
+      <a href="./F2_5.htm">5</a> | 
+      <a href="./F2_6.htm">6</a> | 
+      <a href="./F2_7.htm">7</a> | 
+      <a href="./F2_8.htm">8</a> | 
+      <a href="./F2_9.htm">9</a> | 
+      <strong>10</strong> | 
+      next&gt;&gt;
+    </div>
+  
+    <h1 class="title">2.10 ファイル内のすべての行をListとして読み込み</h1>
+    
+    <div id="content">
+      <h2>プログラム</h2>
+      <img src="./F2_10src.png" alt="F2_10">
+    </div>
+    
+    <div id="explain">
+      <h2>プログラムの説明</h2>
+      <table class="explain" summary="explain">
+        <tr>
+          <th>デリミタを考慮したテキストファイルの読み込み</th>
+          <td>
+            <p>テキストファイルであるCSVファイルを読み込む場合には、デリミタ（区切り文字）を考慮する必要があります。</p>
+            <p>先ほどの様な単純なCSVファイルの読み込む場合には、改行文字で読み込んだテキストデータを分割します。これがレコード（列）の分割になります。</p>
+            <p>クラス定数CRLFは キャリッジ・リターン（carriage return）とライン・フィード（line feed）を連結し代入されています。ただし、Windowsの改行文字となります。</p>
+            <p>Stringクラスのインスタンスメソッドsplitを使用し改行文字で分割してList<String>型に変換しています。</p>
+          </td>
+        </tr>
+        <tr>
+          <th>注意</th>
+          <td>
+            <p>改行文字はOS（Operating System）により違います。</p>
+          </td>
+        </tr>
+      </table>
+      
+      
+    </div>
+  </body>
+</html>

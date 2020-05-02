@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang=ja-JP>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <link type="text/css" href="./mystyle.css" rel="stylesheet">
+    <title>2.8 テキストデータの読み込みと出力</title>
+  </head>
+  
+  <body>
+    <div class="navigation">
+      <a href="./F2_7.htm" accesskey="p">&lt;&lt;previous</a> |  
+      <a href="./index.htm">index</a> | 
+      <a href="./F2_1.htm">1</a> | 
+      <a href="./F2_2.htm">2</a> | 
+      <a href="./F2_3.htm">3</a> | 
+      <a href="./F2_4.htm">4</a> | 
+      <a href="./F2_5.htm">5</a> | 
+      <a href="./F2_6.htm">6</a> | 
+      <a href="./F2_7.htm">7</a> | 
+      <strong>8</strong> | 
+      <a href="./F2_9.htm">9</a> | 
+      <a href="./F2_10.htm">10</a> | 
+      <a href="./F2_9.htm" accesskey="n">next&gt;&gt;</a>
+    </div>
+  
+    <h1 class="title">2.8 テキストデータの読み込みと出力</h1>
+    
+    <div id="content">
+      <h2>プログラム</h2>
+      <img src="./F2_8src.png" alt="F2_8">
+    </div>
+    
+    <div id="explain">
+      <h2>プログラムの説明</h2>
+      <table class="explain" summary="explain">
+        <tr>
+          <th>テキストデータの読み込み</th>
+          <td>
+            <p>コンピュータが扱うすべてのデータはバイナリ（バイトの並び）であり、テキストもバイナリの一種です。</p>
+            <p>このため、ファイルからの読み込み手順はテキストであってもバイナリと同じ方法で読むことが出来ます。</p>
+            <p>クラスF2_8を見てください。読み込みにはクラスメソッドが定義され、使用されていますが、ファイルからの読み込みはjava.nio.file.FilesクラスのクラスメソッドであるreadAllBytesが使用されます。</p>
+            <p>違うのはバイトとして読み込んだ後に、Charset.forName("Windows-31J")の文字コードを使用している点です。このCharsetインスタンスはWindowsの文字コードになります。</p>
+            <p>Stringクラス（文字列型）のコンストラクタにbyte型配列と文字コードを実引数として渡すことにより、テキストに変換します。</p>
+          </td>
+        </tr>
+        <tr>
+          <th>文字コード</th>
+          <td>
+            <p>コンピュータでの文字の処理や描画には文字コードやフォント（font）が関係しています。</p>
+            <p>文字コードの素朴な理解は、文字のそれぞれに番号が振られ、コンピュータの内部ではその番号を処理することです。</p>
+          </td>
+        </tr>
+      </table>
+      
+      
+    </div>
+  </body>
+</html>
