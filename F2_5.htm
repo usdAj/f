@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang=ja-JP>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link type="text/css" href="./mystyle.css" rel="stylesheet">
-    <title>2.5 �g��for���䕶��Arrays�N���X</title>
+    <title>2.5 拡張for制御文とArraysクラス</title>
   </head>
   
   <body>
@@ -23,53 +23,53 @@
       <a href="./F2_6.htm" accesskey="n">next&gt;&gt;</a>
     </div>
   
-    <h1 class="title">2.5 �g��for���䕶��Arrays�N���X</h1>
+    <h1 class="title">2.5 拡張for制御文とArraysクラス</h1>
     
     <div id="content">
-      <h2>�v���O����</h2>
+      <h2>プログラム</h2>
       <img src="./F2_5src.png" alt="F2_5">
     </div>
     
     <div id="explain">
-      <h2>�v���O�����̐���</h2>
+      <h2>プログラムの説明</h2>
       <table class="explain" summary="explain">
         <tr>
-          <th>�g��for���䕶</th>
+          <th>拡張for制御文</th>
           <td>
-            <p>�N���XF2_6�̃N���X���\�b�hprint�����Ă��������B���̃��\�b�h�͈����Ƃ���list:List<String>���󂯎��A�g��for���䕶�ŌJ��Ԃ����������Ă��܂��B</p>
-            <p>�g��for���䕶�Ƃ́C�R���N�V�����i����^�̏W���j��z�񂩂�v�f�����o���Ȃ��牽�炩�̏���������J��Ԃ��ł��B�ȉ��̗l�ȋL�q�ƂȂ�A���ʂ�for���䕶�ƈႢ�J�E���^�[���K�v�Ȃ��Ȃ�܂��B</p>
-            <p>for  (�^ �ϐ���: �R���N�V����) {</br>
-            �@�@���ߕ�;</br>
-            �@�@�E</br>
-            �@�@�E</br>
-            �@�@�E</br>
+            <p>クラスF2_6のクラスメソッドprintを見てください。このメソッドは引数としてlist:List<String>を受け取り、拡張for制御文で繰り返しを実現しています。</p>
+            <p>拡張for制御文とは，コレクション（ある型の集合）や配列から要素を取り出しながら何らかの処理をする繰り返しです。以下の様な記述となり、普通のfor制御文と違いカウンターが必要なくなります。</p>
+            <p>for  (型 変数名: コレクション) {</br>
+            　　命令文;</br>
+            　　・</br>
+            　　・</br>
+            　　・</br>
             }</p>
           </td>
         </tr>
         <tr>
-          <th>�R���N�V����</th>
+          <th>コレクション</th>
           <td>
-            <p>�R���N�V�����iCollection�j�Ƃ́A����^�̏W���̊T�O�ł��B���̂��ߊT�O��͔z����R���N�V�����Ɋ܂܂�܂��B</p>
-            <p>�܂��A�W�����C�u������Collection�C���^�t�F�[�X�������Ă���ꍇ������܂��B���̏ꍇ�́A�R���N�V�����K�w�̃��[�g�E�C���^�t�F�[�X�ł��B�T�u�C���^�t�F�[�X�ɂ�List�C���^�t�F�[�X�Ȃǂ�����A�����N���X�ɂ�ArrayList�N���X�Ȃǂ�����܂��B</p>
+            <p>コレクション（Collection）とは、ある型の集合の概念です。そのため概念上は配列もコレクションに含まれます。</p>
+            <p>また、標準ライブラリのCollectionインタフェースを示している場合もあります。この場合は、コレクション階層のルート・インタフェースです。サブインタフェースにはListインタフェースなどがあり、実装クラスにはArrayListクラスなどがあります。</p>
           </td>
         </tr>
         <tr>
           <th>Arrays</th>
           <td>
-            <p>JavaDoc��Arrays�N���X���������܂��傤�B���̃N���X�̖����̓\�[�g�⌟���ȂǁA�z��𑀍삷�邽�߂̂��܂��܂ȃ��\�b�h������܂��B</p>
-            <p>Arrays.asList�̓N���X���\�b�h�ł���A�ϒ��������g�p����Ă��܂��B</p>
+            <p>JavaDocでArraysクラスを検索しましょう。このクラスの役割はソートや検索など、配列を操作するためのさまざまなメソッドがあります。</p>
+            <p>Arrays.asListはクラスメソッドであり、可変長引数が使用されています。</p>
           </td>
         </tr>
         <tr>
-          <th>�ϒ�����</th>
+          <th>可変長引数</th>
           <td>
-            <p>�����̌����ςȃ��\�b�h���`�ł���L�q�ł��B</p>
-            <p>public void method1 (�^... �ϐ���) {</br>
-            �@�@�E</br>
-            �@�@�E</br>
-            �@�@�E</br>
+            <p>引数の個数が可変なメソッドを定義できる記述です。</p>
+            <p>public void method1 (型... 変数名) {</br>
+            　　・</br>
+            　　・</br>
+            　　・</br>
             }</p>
-            <p>���\�b�g�̒�`�ɂ����Ĉ����̌^�̌�ɔ��p�h�b�g���R�A�˂ċL�q���邱�ƂŁC���̃��\�b�h���ϒ������Ƃ��邱�Ƃ��ł��܂��B</p>
+            <p>メソットの定義において引数の型の後に半角ドットを３個連ねて記述することで，そのメソッドを可変長引数とすることができます。</p>
           </td>
         </tr>
       </table>

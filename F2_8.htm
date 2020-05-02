@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang=ja-JP>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link type="text/css" href="./mystyle.css" rel="stylesheet">
-    <title>2.8 �e�L�X�g�f�[�^�̓ǂݍ��݂Əo��</title>
+    <title>2.8 テキストデータの読み込みと出力</title>
   </head>
   
   <body>
@@ -23,31 +23,31 @@
       <a href="./F2_9.htm" accesskey="n">next&gt;&gt;</a>
     </div>
   
-    <h1 class="title">2.8 �e�L�X�g�f�[�^�̓ǂݍ��݂Əo��</h1>
+    <h1 class="title">2.8 テキストデータの読み込みと出力</h1>
     
     <div id="content">
-      <h2>�v���O����</h2>
+      <h2>プログラム</h2>
       <img src="./F2_8src.png" alt="F2_8">
     </div>
     
     <div id="explain">
-      <h2>�v���O�����̐���</h2>
+      <h2>プログラムの説明</h2>
       <table class="explain" summary="explain">
         <tr>
-          <th>�e�L�X�g�f�[�^�̓ǂݍ���</th>
+          <th>テキストデータの読み込み</th>
           <td>
-            <p>�R���s���[�^���������ׂẴf�[�^�̓o�C�i���i�o�C�g�̕��сj�ł���A�e�L�X�g���o�C�i���̈��ł��B</p>
-            <p>���̂��߁A�t�@�C������̓ǂݍ��ݎ菇�̓e�L�X�g�ł����Ă��o�C�i���Ɠ������@�œǂނ��Ƃ��o���܂��B</p>
-            <p>�N���XF2_8�����Ă��������B�ǂݍ��݂ɂ̓N���X���\�b�h����`����A�g�p����Ă��܂����A�t�@�C������̓ǂݍ��݂�java.nio.file.Files�N���X�̃N���X���\�b�h�ł���readAllBytes���g�p����܂��B</p>
-            <p>�Ⴄ�̂̓o�C�g�Ƃ��ēǂݍ��񂾌�ɁACharset.forName("Windows-31J")�̕����R�[�h���g�p���Ă���_�ł��B����Charset�C���X�^���X��Windows�̕����R�[�h�ɂȂ�܂��B</p>
-            <p>String�N���X�i������^�j�̃R���X�g���N�^��byte�^�z��ƕ����R�[�h���������Ƃ��ēn�����Ƃɂ��A�e�L�X�g�ɕϊ����܂��B</p>
+            <p>コンピュータが扱うすべてのデータはバイナリ（バイトの並び）であり、テキストもバイナリの一種です。</p>
+            <p>このため、ファイルからの読み込み手順はテキストであってもバイナリと同じ方法で読むことが出来ます。</p>
+            <p>クラスF2_8を見てください。読み込みにはクラスメソッドが定義され、使用されていますが、ファイルからの読み込みはjava.nio.file.FilesクラスのクラスメソッドであるreadAllBytesが使用されます。</p>
+            <p>違うのはバイトとして読み込んだ後に、Charset.forName("Windows-31J")の文字コードを使用している点です。このCharsetインスタンスはWindowsの文字コードになります。</p>
+            <p>Stringクラス（文字列型）のコンストラクタにbyte型配列と文字コードを実引数として渡すことにより、テキストに変換します。</p>
           </td>
         </tr>
         <tr>
-          <th>�����R�[�h</th>
+          <th>文字コード</th>
           <td>
-            <p>�R���s���[�^�ł̕����̏�����`��ɂ͕����R�[�h��t�H���g�ifont�j���֌W���Ă��܂��B</p>
-            <p>�����R�[�h�̑f�p�ȗ����́A�����̂��ꂼ��ɔԍ����U���A�R���s���[�^�̓����ł͂��̔ԍ����������邱�Ƃł��B</p>
+            <p>コンピュータでの文字の処理や描画には文字コードやフォント（font）が関係しています。</p>
+            <p>文字コードの素朴な理解は、文字のそれぞれに番号が振られ、コンピュータの内部ではその番号を処理することです。</p>
           </td>
         </tr>
       </table>

@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang=ja-JP>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link type="text/css" href="./mystyle.css" rel="stylesheet">
-    <title>2.10 �t�@�C�����̂��ׂĂ̍s��List�Ƃ��ēǂݍ���</title>
+    <title>2.10 ファイル内のすべての行をListとして読み込み</title>
   </head>
   
   <body>
@@ -23,29 +23,29 @@
       next&gt;&gt;
     </div>
   
-    <h1 class="title">2.10 �t�@�C�����̂��ׂĂ̍s��List�Ƃ��ēǂݍ���</h1>
+    <h1 class="title">2.10 ファイル内のすべての行をListとして読み込み</h1>
     
     <div id="content">
-      <h2>�v���O����</h2>
+      <h2>プログラム</h2>
       <img src="./F2_10src.png" alt="F2_10">
     </div>
     
     <div id="explain">
-      <h2>�v���O�����̐���</h2>
+      <h2>プログラムの説明</h2>
       <table class="explain" summary="explain">
         <tr>
-          <th>�f���~�^���l�������e�L�X�g�t�@�C���̓ǂݍ���</th>
+          <th>デリミタを考慮したテキストファイルの読み込み</th>
           <td>
-            <p>�e�L�X�g�t�@�C���ł���CSV�t�@�C����ǂݍ��ޏꍇ�ɂ́A�f���~�^�i��؂蕶���j���l������K�v������܂��B</p>
-            <p>��قǂ̗l�ȒP����CSV�t�@�C���̓ǂݍ��ޏꍇ�ɂ́A���s�����œǂݍ��񂾃e�L�X�g�f�[�^�𕪊����܂��B���ꂪ���R�[�h�i��j�̕����ɂȂ�܂��B</p>
-            <p>�N���X�萔CRLF�� �L�����b�W�E���^�[���icarriage return�j�ƃ��C���E�t�B�[�h�iline feed�j��A�����������Ă��܂��B�������AWindows�̉��s�����ƂȂ�܂��B</p>
-            <p>String�N���X�̃C���X�^���X���\�b�hsplit���g�p�����s�����ŕ�������List<String>�^�ɕϊ����Ă��܂��B</p>
+            <p>テキストファイルであるCSVファイルを読み込む場合には、デリミタ（区切り文字）を考慮する必要があります。</p>
+            <p>先ほどの様な単純なCSVファイルの読み込む場合には、改行文字で読み込んだテキストデータを分割します。これがレコード（列）の分割になります。</p>
+            <p>クラス定数CRLFは キャリッジ・リターン（carriage return）とライン・フィード（line feed）を連結し代入されています。ただし、Windowsの改行文字となります。</p>
+            <p>Stringクラスのインスタンスメソッドsplitを使用し改行文字で分割してList<String>型に変換しています。</p>
           </td>
         </tr>
         <tr>
-          <th>����</th>
+          <th>注意</th>
           <td>
-            <p>���s������OS�iOperating System�j�ɂ��Ⴂ�܂��B</p>
+            <p>改行文字はOS（Operating System）により違います。</p>
           </td>
         </tr>
       </table>

@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang=ja-JP>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link type="text/css" href="./mystyle.css" rel="stylesheet">
-    <title>2.7 �t�@�C���̃o�C�g�ǂݍ���</title>
+    <title>2.7 ファイルのバイト読み込み</title>
   </head>
   
   <body>
@@ -23,45 +23,45 @@
       <a href="./F2_8.htm" accesskey="n">next&gt;&gt;</a>
     </div>
   
-    <h1 class="title">2.7 �t�@�C���̃o�C�g�ǂݍ���</h1>
+    <h1 class="title">2.7 ファイルのバイト読み込み</h1>
     
     <div id="content">
-      <h2>�v���O����</h2>
+      <h2>プログラム</h2>
       <img src="./F2_7src.png" alt="F2_7">
     </div>
     
     <div id="explain">
-      <h2>�v���O�����̐���</h2>
+      <h2>プログラムの説明</h2>
       <table class="explain" summary="explain">
         <tr>
-          <th>�t�@�C���̃o�C�g�ǂݍ���</th>
+          <th>ファイルのバイト読み込み</th>
           <td>
-            <p>�t�@�C���̓��e�̓o�C�g�E�f�[�^�̕��тł��B�������A���̃f�[�^�𐧌����āA��ʂ��邱�ƂŐF�X�Ȃ��̂�\�����܂��B</p>
-            <p>�N���XF2_7�����Ă��������B</p>
-            <p>���[�J���ϐ�data��錾���A�����l�Ƃ��Ē���0�̔z��������Ă��܂��Bdata�͊�{�f�[�^�^�ł���byte�^�̔z��ƂȂ�܂��B</p>
-            <p>��O�����̍\���ł���try�߂ŕϐ�data�ւ̑�����s�����ߏ����l���K�v�ƂȂ�܂��B</p>
-            <p>java.nio.file.Files�N���X�̃N���X���\�b�h�ł���readAllBytes���g�p���ăt�@�C���̓ǂݍ��݂��s���܂��B�������Ƃ���Path�C���X�^���X��n���܂��B</p>
-            <p>�t�@�C���̓ǂݍ��݂��o�����ꍇ�Abyte�z��ƂȂ�A�ǂݍ��ނ��Ƃ��o���܂��B</p>
-            <p>for���䕶�ł͂���byte�z���16�i���Q���ɂ��ďo�͂��Ă��܂��B</p>
+            <p>ファイルの内容はバイト・データの並びです。ただし、そのデータを制限して、区別することで色々なものを表現します。</p>
+            <p>クラスF2_7を見てください。</p>
+            <p>ローカル変数dataを宣言し、初期値として長さ0の配列を代入しています。dataは基本データ型であるbyte型の配列となります。</p>
+            <p>例外処理の構文であるtry節で変数dataへの代入を行うため初期値が必要となります。</p>
+            <p>java.nio.file.FilesクラスのクラスメソッドであるreadAllBytesを使用してファイルの読み込みを行います。実引数としてPathインスタンスを渡します。</p>
+            <p>ファイルの読み込みが出来た場合、byte配列となり、読み込むことが出来ます。</p>
+            <p>for制御文ではそのbyte配列を16進数２桁にして出力しています。</p>
           </td>
         </tr>
         <tr>
-          <th>�o�C�g�ibyte�j</th>
+          <th>バイト（byte）</th>
           <td>
-            <p>��ʓI�ɂ́A�P�r�b�g�Ƃ����P�ʂ�8���񂾂��̂ł��B</p>
+            <p>一般的には、１ビットという単位が8つ並んだものです。</p>
           </td>
         </tr>
         <tr>
-          <th>�r�b�g�ibit�j</th>
+          <th>ビット（bit）</th>
           <td>
-            <p>2�i����1����0��1�ł��B</p>
+            <p>2進数の1桁で0か1です。</p>
           </td>
         </tr>
         <tr>
-          <th>����</th>
+          <th>注意</th>
           <td>
-            <p>�傫�ȃt�@�C����Ǎ��ނɂ͍H�v���K�v�ɂȂ�܂��B</p>
-            <p>Java�̃t�@�C������N���X�́AJava 7�ŐV�������̂���������܂����i�ʏ�NIO2�j�B���̃e�L�X�g��NIO2���g�p���Ă��܂��B</p>
+            <p>大きなファイルを読込むには工夫が必要になります。</p>
+            <p>Javaのファイル操作クラスは、Java 7で新しいものが導入されました（通称NIO2）。このテキストはNIO2を使用しています。</p>
           </td>
         </tr>
       </table>

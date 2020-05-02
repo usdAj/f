@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang=ja-JP>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link type="text/css" href="./mystyle.css" rel="stylesheet">
-    <title>2.9 CSV�t�@�C��</title>
+    <title>2.9 CSVファイル</title>
   </head>
   
   <body>
@@ -23,31 +23,31 @@
       <a href="./F2_10.htm" accesskey="n">next&gt;&gt;</a>
     </div>
   
-    <h1 class="title">2.9 CSV�t�@�C��</h1>
+    <h1 class="title">2.9 CSVファイル</h1>
     
     <div id="content">
-      <h2>�e�L�X�g�f�[�^</h2>
+      <h2>テキストデータ</h2>
       <img src="./F2_9src.png" alt="F2_9">
     </div>
     
     <div id="explain">
-      <h2>�e�L�X�g�f�[�^�̐���</h2>
+      <h2>テキストデータの説明</h2>
       <table class="explain" summary="explain">
         <tr>
-          <th>CSV�t�@�C��</th>
+          <th>CSVファイル</th>
           <td>
-            <p>�t�@�C���`���ɂ͊ȒP�Ȃ��̂ł͌Œ蒷�`��������܂��B1���̃f�[�^�̕����̌����i�����j�����܂��Ă�����̂ł��B���������܂��Ă��邽�߁A���ʂȕ����������Ȃ�f�����b�g������܂��B���̃f�[�^��A�˂邱�Ƃŕ����̃f�[�^��\���ł��܂��B</p>
-            <p>����ɑ΂��āA�ϒ��`��������܂��B�ϒ��`�����������邽�߂ɁA�e���ڂ�e�f�[�^�𕪂����؂蕶�����g�p���܂��B���̋�؂蕶�����f���~�^�ƌ����܂��B</p>
-            <p>CSV�iComma-Separated Values�j�`���͊e���ڂ̋�؂蕶���ɃJ���}�����i,�j�A�e�f�[�^�̋�؂蕶���ɉ��s�������g��ꂽ�ϒ��`���ɂȂ�܂��B�P���̃f�[�^�����R�[�h�A���ڂ��t�B�[���h�Ƃ������܂��B</p>
-            <p>data2.csv�����Ă��������B�P�s�ڂ̓w�b�_�s�ƌ����A���̃��R�[�h�Ɠ������̃t�B�[���h�������A�t�B�[���h�����L�q����Ă��܂��B</p>
-            <p>���̃t�@�C���ɂ́A�Q�s�ڂ���Q���̃��R�[�h������܂��B</p>
-            <p>�P���̃��R�[�h�̓R���}�ŋ�؂�ꂽ�e�t�B�[���h�̒l�ɂȂ�܂��B</p>
+            <p>ファイル形式には簡単なものでは固定長形式があります。1件のデータの文字の桁数（長さ）が決まっているものです。長さが決まっているため、無駄な部分が多くなるデメリットがあります。このデータを連ねることで複数のデータを表現できます。</p>
+            <p>これに対して、可変長形式があります。可変長形式を実現するために、各項目や各データを分ける区切り文字を使用します。この区切り文字をデリミタと言います。</p>
+            <p>CSV（Comma-Separated Values）形式は各項目の区切り文字にカンマ文字（,）、各データの区切り文字に改行文字が使われた可変長形式になります。１件のデータをレコード、項目をフィールドとも言います。</p>
+            <p>data2.csvを見てください。１行目はヘッダ行と言われ、他のレコードと同じ個数のフィールドを持ち、フィールド名が記述されています。</p>
+            <p>このファイルには、２行目から２件のレコードがあります。</p>
+            <p>１件のレコードはコンマで区切られた各フィールドの値になります。</p>
           </td>
         </tr>
         <tr>
-          <th>����</th>
+          <th>注意</th>
           <td>
-            <p>CSV�`���̃t�@�C���́A�Â����瑽���̕\�v�Z�\�t�g��f�[�^�x�[�X�\�t�g�Ŏg�p����Ă��܂��B�������A�\�t�g�Ԃŏڍׂ̈Ⴂ������܂��B</p>
+            <p>CSV形式のファイルは、古くから多くの表計算ソフトやデータベースソフトで使用されています。ただし、ソフト間で詳細の違いがあります。</p>
           </td>
         </tr>
       </table>
